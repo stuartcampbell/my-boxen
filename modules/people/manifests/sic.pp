@@ -3,7 +3,7 @@ class people::sic {
 
   case $::hostname {
     'deckard': {
-      include projects::boxen-web
+	notify { 'Configuring Work Laptop...': }
     }
 
     default: {}
