@@ -35,3 +35,8 @@ github "sudo",     "1.0.0"
 # https://github.com/boxen.
 
 github "caffeine", "1.0.0"
+github "csshx", "1.0.0"
+github "macvim", "1.0.0"
+github "sublime_text_2", "1.1.0"
+github "textwrangler", "1.0.0"
+github "vlc", "1.0.1"

@@ -72,12 +72,15 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  include macvim
+
   # common, useful packages
   package {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'spark'
     ]:
   }
 
