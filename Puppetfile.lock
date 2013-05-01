@@ -9,9 +9,19 @@ GITHUBTARBALL
     caffeine (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-crashplan
+  specs:
+    crashplan (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-csshx
   specs:
     csshx (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-cyberduck
+  specs:
+    cyberduck (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -64,6 +74,11 @@ GITHUBTARBALL
     ruby (3.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sourcetree
+  specs:
+    sourcetree (0.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
     sublime_text_2 (1.1.0)
@@ -96,7 +111,9 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 1.2.0)
   caffeine (= 1.0.0)
+  crashplan (= 1.0.1)
   csshx (= 1.0.0)
+  cyberduck (= 1.0.0)
   dnsmasq (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.0.0)
@@ -108,6 +125,7 @@ DEPENDENCIES
   nodejs (= 1.0.0)
   nvm (= 1.0.0)
   ruby (= 3.1.0)
+  sourcetree (= 0.0.2)
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)

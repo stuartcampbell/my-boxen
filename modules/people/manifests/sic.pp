@@ -11,6 +11,7 @@ class people::sic {
     }
 
     default: {
+       include crashplan
     }
 
   }    
