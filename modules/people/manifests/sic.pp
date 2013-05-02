@@ -14,5 +14,18 @@ class people::sic {
        include crashplan
     }
 
+
+  # Useful packages
+  package {
+    [
+      'ack',
+      'findutils',
+      'gnu-tar',
+      'spark',
+      'wget',
+      'tmux'
+    ]:
+  }
+
   }    
 }
