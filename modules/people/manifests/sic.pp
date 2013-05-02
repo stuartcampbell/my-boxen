@@ -14,6 +14,7 @@ class people::sic {
        include crashplan
     }
 
+  }    
 
   # Useful packages
   package {
@@ -27,5 +28,4 @@ class people::sic {
     ]:
   }
 
-  }    
 }
