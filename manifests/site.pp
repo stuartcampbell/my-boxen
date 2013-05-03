@@ -75,12 +75,19 @@ node default {
   # common, useful packages
   package {
     [
-      'ack',
       'findutils',
       'gnu-tar',
-      'wget'
     ]:
   }
+
+  require homebrew
+
+#  exec { 'tap-homebrew-dupes':
+#    command => "brew tap homebrew/dupes",
+#    creates => "${homebrew::config::tapsdir}/homebrew-dupes",
+#    before => Package['zlib']
+#  }
+
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,

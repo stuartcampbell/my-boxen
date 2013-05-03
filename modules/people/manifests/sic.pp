@@ -8,6 +8,11 @@ class people::sic {
     'deckard': {
 	  notify { 'Configuring Work Laptop...': }
 	  # TODO: Other work specific stuff
+    package {
+     [ 
+      'gcc48'
+     ]:
+    }
     }
 
     default: {
@@ -16,12 +21,16 @@ class people::sic {
 
   }    
 
+  exec { 'tap-homebrew-versions':
+    command => "brew tap homebrew/versions",
+    creates => "${homebrew::config::tapsdir}/homebrew-versions",
+    before => Package['gcc48']
+  }
+
   # Useful packages
   package {
     [
       'ack',
-      'findutils',
-      'gnu-tar',
       'spark',
       'wget',
       'tmux'
