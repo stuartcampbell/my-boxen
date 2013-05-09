@@ -4,13 +4,23 @@ class people::sic {
   include macvim
   include vlc
 
+  #if ($::hostname == 'deckard') || )$::hostname == 'waldorf')
+
   case $::hostname {
     'deckard': {
 	  notify { 'Configuring Work Laptop...': }
-	  # TODO: Other work specific stuff
     package {
      [ 
+      'corkscrew',
       'gcc48'
+     ]:
+    }
+    }
+    'waldorf' : {
+    notify { 'Configuring Work Desktop...':}
+    package {
+     [
+       'corkscrew'
      ]:
     }
     }
