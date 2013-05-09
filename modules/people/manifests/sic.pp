@@ -9,6 +9,14 @@ class people::sic {
   case $::hostname {
     'deckard': {
 	  notify { 'Configuring Work Laptop...': }
+
+    exec { 'tap-homebrew-versions':
+      command => "brew tap homebrew/versions",
+      creates => "${homebrew::config::tapsdir}/homebrew-versions",
+      before => Package['gcc48']
+    }
+
+
     package {
      [ 
       'corkscrew',
@@ -26,7 +34,7 @@ class people::sic {
     }
 
     default: {
-       include crashplan
+       #include crashplan
     }
 
   }    
