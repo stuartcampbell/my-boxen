@@ -39,11 +39,11 @@ class people::sic {
 
   }    
 
-  exec { 'tap-homebrew-versions':
-    command => "brew tap homebrew/versions",
-    creates => "${homebrew::config::tapsdir}/homebrew-versions",
-    before => Package['gcc48']
-  }
+  #exec { 'tap-homebrew-versions':
+  #  command => "brew tap homebrew/versions",
+  #  creates => "${homebrew::config::tapsdir}/homebrew-versions",
+  #  before => Package['gcc48']
+  #}
 
   # Useful packages
   package {
