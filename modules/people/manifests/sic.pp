@@ -34,7 +34,7 @@ class people::sic {
     }
 
     default: {
-       #include crashplan
+       include crashplan
     }
 
   }    
