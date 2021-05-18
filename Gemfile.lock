@@ -29,11 +29,14 @@ GEM
     librarian-puppet (0.9.8)
       json
       thor (~> 0.15)
+    mini_portile2 (2.5.1)
     multi_json (1.6.1)
     multipart-post (1.1.5)
     net-ssh (2.6.5)
     netrc (0.7.7)
-    nokogiri (1.5.6)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     octokit (1.23.0)
       addressable (~> 2.2)
       faraday (~> 0.8)
@@ -45,6 +48,7 @@ GEM
     puppet (3.1.0)
       facter (~> 1.6)
       hiera (~> 1.0)
+    racc (1.5.2)
     rbvmomi (1.6.0)
       builder
       nokogiri (>= 1.4.1)
